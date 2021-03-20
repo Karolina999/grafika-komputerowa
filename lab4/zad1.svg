@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+
+    width="800" height="600"
+    viewBox="0 0 800 600"
+
+    preserveAspectRatio="xMidYMid">
+    
+    <defs>
+        <g id = "poly">
+        <path d="M 400,250 439,268 448,311 421,345 378,345 351,311 360,268 Z" fill="MediumTurquoise" stroke="rgba(0,100,200,0.3" stroke-width="2">
+            <animateTransform attributeName = "transform" type = "rotate"
+                            from = "0 400 300" to = "360 400 300"
+                            dur = "6s" 
+                            repeatCount = "indefinite" />
+        </path>
+        </g>
+
+        <g id = "rect">
+        <rect x="350" y="140" width="270" height="20" fill="red" transform = "rotate (20)"/>
+        </g>
+
+        <g id = "triangle">
+        <polygon points="400,200 430,400 370,400"/>
+        </g>
+    </defs>
+
+    <!-- ŚRODKOWY -->
+
+    <use xlink:href = "#poly" transform ="translate(130,135)"/>
+    <use xlink:href = "#poly" transform ="translate(-120,50)"/>
+    <use xlink:href = "#rect" transform ="translate(0,90)"/>
+    <use xlink:href = "#triangle" transform ="translate(0,200)" fill = "blue"/>
+
+    <!-- LEWY -->
+
+    <use xlink:href = "#poly" transform ="translate(-70,-50) scale(0.8)"/>
+    <use xlink:href = "#poly" transform ="translate(-270,-125) scale(0.8)"/>
+    <use xlink:href = "#rect" transform ="translate(-175,-90) scale(0.8)"/>
+    <use xlink:href = "#triangle" transform ="translate(-175,0) scale(0.8)" fill = "purple"/>
+
+    <!-- PRAWY -->
+
+    <use xlink:href = "#poly" transform ="translate(440,-45) scale(0.7)"/>
+    <use xlink:href = "#poly" transform ="translate(265,-110) scale(0.7)"/>
+    <use xlink:href = "#rect" transform ="translate(350,-80) scale(0.7)"/>
+    <use xlink:href = "#triangle" transform ="translate(350,0) scale(0.7)" fill = "green"/>
+
+</svg>
